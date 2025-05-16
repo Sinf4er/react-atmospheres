@@ -17,7 +17,8 @@
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "prepare": "npm run build",
-    "deploy": "npm run build:example && gh-pages -d example-dist"
+    "deploy": "npm run build:example && gh-pages -d example-dist",
+    "deploy:publish": "gh-pages -d example-dist"
   },
   "author": "Robin Glaeser",
   "license": "MIT",

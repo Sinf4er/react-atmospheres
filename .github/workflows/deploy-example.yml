@@ -10,14 +10,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use public npm registry
-        run: npm config set registry https://registry.npmjs.org/
+      - name: Prepare public npm config
+        run: echo "registry=https://registry.npmjs.org/" > /tmp/npmrc
 
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
+        env:
+          NPM_CONFIG_USERCONFIG: /tmp/npmrc
         run: npm ci
 
       - name: Build example

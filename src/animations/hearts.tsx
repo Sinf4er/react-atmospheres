@@ -90,10 +90,10 @@ export const HeartAnimation: React.FC<HeartProps> = ({
       () => ({
         x: Math.random() * canvas.width,
         y: canvas.height + Math.random() * 100,
-        size: Math.random() * 20 + 10,
-        speed: Math.random() + 0.5 * speedFactor,
-        alpha: Math.random() * 0.5 + 0.5,
-        drift: (Math.random() - 0.5) * 0.5,
+        size: Math.random() * 20,
+        speed: Math.random() * speedFactor,
+        alpha: Math.random() * 0.5,
+        drift: Math.random() * 0.5,
       })
     );
 

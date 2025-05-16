@@ -1,13 +1,13 @@
 import React, { ReactNode, useEffect, useRef } from 'react';
 import { SnowAnimation, HeartAnimation } from './animations';
 
-export type AtmosphereType = 'snow' | 'hearts' | 'spooky' | 'none';
+export type AtmospheresType = 'snow' | 'hearts' | 'spooky' | 'none';
 
 interface Props {
-  /** Children to render inside the atmosphere */
+  /** Children to render inside the atmospheres */
   children: ReactNode;
   /** Type of animation to use */
-  animation?: AtmosphereType;
+  animation?: AtmospheresType;
   /** Disable the animation */
   disabled?: boolean;
   /** Amount of animated objects, can not be higher then 100 */
@@ -20,7 +20,7 @@ interface Props {
   speedFactor?: number;
 }
 
-export const Atmosphere = ({
+export const Atmospheres = ({
   children,
   animation = 'none',
   disabled = false,

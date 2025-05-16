@@ -1,6 +1,6 @@
-# react-atmosphere
+# react-atmospheres
 
-[![npm version](https://img.shields.io/npm/v/react-atmosphere)](https://www.npmjs.com/package/react-atmosphere) [![Downloads/week](https://img.shields.io/npm/dw/react-atmosphere)](https://www.npmjs.com/package/react-atmosphere) [![Build Status](https://github.com/yourusername/react-atmosphere/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/react-atmosphere/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-atmospheres)](https://www.npmjs.com/package/react-atmospheres) [![Downloads/week](https://img.shields.io/npm/dw/react-atmospheres)](https://www.npmjs.com/package/react-atmospheres) [![Build Status](https://github.com/sinf4er/react-atmospheres/actions/workflows/ci.yml/badge.svg)](https://github.com/sinf4er/react-atmospheres/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A lightweight React wrapper to add seasonal, themed visual effects—snow, hearts, spooky, and more—behind any container without blocking or slowing your app.
 
@@ -21,13 +21,13 @@ A lightweight React wrapper to add seasonal, themed visual effects—snow, heart
 Install via npm:
 
 ```bash
-npm install react-atmosphere
+npm install react-atmospheres
 ```
 
 Or via Yarn:
 
 ```bash
-yarn add react-atmosphere
+yarn add react-atmospheres
 ```
 
 ---
@@ -36,11 +36,11 @@ yarn add react-atmosphere
 
 ```tsx
 import React from 'react';
-import { Atmosphere } from 'react-atmosphere';
+import { Atmospheres } from 'react-atmospheres';
 
 export function Header() {
   return (
-    <Atmosphere
+    <Atmospheres
       animation="snow"
       speedFactor={1.5}
       maxPartikels={50}
@@ -49,7 +49,7 @@ export function Header() {
       <header>
         <h1>Welcome to Winter Wonderland</h1>
       </header>
-    </Atmosphere>
+    </Atmospheres>
   );
 }
 ```
@@ -58,7 +58,7 @@ export function Header() {
 
 ## 🎛️ API Reference
 
-### `<Atmosphere>`
+### `<Atmospheres>`
 
 Wrap any React node to render a selected animation behind it.
 

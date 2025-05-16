@@ -10,7 +10,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      'react-atmosphere': '/src',
+      'react-atmospheres': '/src',
     },
   },
 });

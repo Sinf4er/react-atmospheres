@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Atmosphere } from '../src';
-import { AtmosphereType } from '../src/Atmosphere';
+import { Atmospheres } from '../src';
+import { AtmospheresType } from '../src/Atmospheres';
 
 function App() {
-  const [animation, setAnimation] = useState<AtmosphereType>('snow');
+  const [animation, setAnimation] = useState<AtmospheresType>('snow');
   const [particleAmount, setParticleAmount] = useState<number>(50);
   const [speed, setSpeed] = useState<number>(0.3);
 
@@ -18,9 +18,9 @@ function App() {
           fontFamily: 'monospace',
         }}
       >
-        Hello from react-atmosphere!
+        Hello from react-atmospheres!
       </h1>
-      <Atmosphere
+      <Atmospheres
         animation={animation}
         particleAmount={particleAmount}
         disabled={false}
@@ -60,9 +60,9 @@ function App() {
             Link
           </a>
         </div>
-      </Atmosphere>
+      </Atmospheres>
 
-      <Atmosphere
+      <Atmospheres
         animation={animation}
         particleAmount={particleAmount}
         disabled={false}
@@ -103,7 +103,7 @@ function App() {
             Link
           </a>
         </div>
-      </Atmosphere>
+      </Atmospheres>
 
       <button
         onClick={() => setAnimation('snow')}

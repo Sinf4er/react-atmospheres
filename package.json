@@ -1,5 +1,5 @@
 {
-  "name": "react-atmosphere",
+  "name": "react-atmospheres",
   "version": "0.1.0",
   "description": "A lightweight wrapper to add seasonal, themed visual effects in your React app.",
   "main": "dist/index.cjs.js",
@@ -25,7 +25,7 @@
     "seasonal",
     "effects",
     "theme",
-    "atmosphere"
+    "atmospheres"
   ],
   "peerDependencies": {
     "react": "^18.0.0",
@@ -51,5 +51,10 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinf4er/react-atmospheres.git"
+  },
+  "homepage": "https://github.com/sinf4er/react-atmospheres#readme"
 }

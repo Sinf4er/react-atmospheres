@@ -1,2 +1,2 @@
-export { Atmosphere } from './Atmosphere';
+export { Atmospheres } from './Atmospheres';
 export * from './animations';

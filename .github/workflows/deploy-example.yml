@@ -10,16 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Prepare public npm config
-        run: echo "registry=https://registry.npmjs.org/" > /tmp/npmrc
+      - name: Remove private .npmrc
+        run: rm -f ${{ github.workspace }}/.npmrc
 
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
-        env:
-          NPM_CONFIG_USERCONFIG: /tmp/npmrc
         run: npm ci
 
       - name: Build example

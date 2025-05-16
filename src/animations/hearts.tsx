@@ -64,7 +64,6 @@ export const HeartAnimation: React.FC<HeartProps> = ({
     ctx.quadraticCurveTo(x, y, x, y + size / 4);
     ctx.closePath();
 
-    // Fill and stroke
     ctx.fillStyle = fill;
     ctx.fill();
     ctx.lineWidth = 1;
